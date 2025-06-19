@@ -1,3 +1,4 @@
+
 import { ArrowRight, Leaf, Target, Users, TrendingUp, CheckCircle, Globe, Lightbulb, Play, Youtube } from "lucide-react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
@@ -44,7 +45,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
