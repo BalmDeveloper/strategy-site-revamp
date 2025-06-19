@@ -1,5 +1,5 @@
 
-import { Menu, X, Leaf } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -20,12 +20,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex-shrink-0 flex items-center">
-            <div className="bg-green-600 p-2 rounded-lg mr-3">
-              <Leaf className="w-6 h-6 text-white" />
-            </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-green-600 to-emerald-500 bg-clip-text text-transparent">
-              SuStrategy
-            </h1>
+            <img 
+              src="/lovable-uploads/cf1ee824-ea27-4926-a352-73b381880864.png" 
+              alt="SuStrategy Logo" 
+              className="h-10 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
