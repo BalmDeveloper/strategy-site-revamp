@@ -1,4 +1,5 @@
 
+
 import { ArrowRight, Leaf, Target, Users, TrendingUp, CheckCircle, Globe, Lightbulb, Play, Youtube } from "lucide-react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
@@ -54,10 +55,14 @@ const Index = () => {
         ></div>
         <div className="absolute inset-0 bg-black/40"></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center">
-            <div className="text-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="flex items-center justify-start">
+            <div className="text-left max-w-2xl">
               <div className="animate-fade-in">
+                <p className="text-lg md:text-xl text-green-300 mb-4 font-medium">
+                  Driven by Human Ingenuity
+                </p>
+                
                 <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                   Build a{" "}
                   <span className="bg-gradient-to-r from-green-400 via-emerald-300 to-teal-300 bg-clip-text text-transparent">
@@ -67,12 +72,12 @@ const Index = () => {
                   Future
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed">
                   Transform your business with strategic sustainability consulting that drives 
                   environmental impact, operational efficiency, and long-term growth.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <div className="flex flex-col sm:flex-row gap-4 justify-start items-start mb-12">
                   <button className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-all duration-300 flex items-center group hover:scale-105">
                     Start Your Journey
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -82,7 +87,7 @@ const Index = () => {
                   </button>
                 </div>
 
-                <div className="flex flex-wrap justify-center items-center gap-8 text-gray-300">
+                <div className="flex flex-wrap justify-start items-center gap-8 text-gray-300">
                   <div className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
                     <span>Carbon Neutral Certified</span>
@@ -309,3 +314,4 @@ const Index = () => {
 };
 
 export default Index;
+
