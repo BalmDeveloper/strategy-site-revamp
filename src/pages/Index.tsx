@@ -1,4 +1,3 @@
-
 import { ArrowRight, Leaf, Target, Users, TrendingUp, CheckCircle, Globe, Lightbulb, Play, Youtube } from "lucide-react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
@@ -55,8 +54,8 @@ const Index = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div className="text-center lg:text-left">
+          <div className="flex items-center justify-center">
+            <div className="text-center">
               <div className="animate-fade-in">
                 <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                   Build a{" "}
@@ -67,12 +66,12 @@ const Index = () => {
                   Future
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl leading-relaxed">
+                <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
                   Transform your business with strategic sustainability consulting that drives 
                   environmental impact, operational efficiency, and long-term growth.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                   <button className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-all duration-300 flex items-center group hover:scale-105">
                     Start Your Journey
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
@@ -82,7 +81,7 @@ const Index = () => {
                   </button>
                 </div>
 
-                <div className="flex flex-wrap justify-center lg:justify-start items-center gap-8 text-gray-300">
+                <div className="flex flex-wrap justify-center items-center gap-8 text-gray-300">
                   <div className="flex items-center">
                     <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
                     <span>Carbon Neutral Certified</span>
@@ -96,17 +95,6 @@ const Index = () => {
                     <span>Innovative Solutions</span>
                   </div>
                 </div>
-              </div>
-            </div>
-            
-            <div className="relative">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
-                  alt="Professional woman working on sustainability consulting"
-                  className="w-full h-[600px] object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-green-900/30 to-transparent"></div>
               </div>
             </div>
           </div>
@@ -289,7 +277,7 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-20 bg-gray-900">
+      <section id="contact" className="py-20 bg-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Make an{" "}
