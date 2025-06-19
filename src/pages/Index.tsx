@@ -46,25 +46,28 @@ const Index = () => {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50"></div>
-        <div className="absolute inset-0 opacity-40" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2316a34a' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-        }}></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/lovable-uploads/1778d6dd-b763-4ba4-bae8-e251b84deb34.png)'
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-black/40"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="text-center lg:text-left">
               <div className="animate-fade-in">
-                <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+                <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
                   Build a{" "}
-                  <span className="bg-gradient-to-r from-green-600 via-emerald-500 to-teal-500 bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-green-400 via-emerald-300 to-teal-300 bg-clip-text text-transparent">
                     Sustainable
                   </span>
                   <br />
                   Future
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl leading-relaxed">
+                <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl leading-relaxed">
                   Transform your business with strategic sustainability consulting that drives 
                   environmental impact, operational efficiency, and long-term growth.
                 </p>
@@ -74,22 +77,22 @@ const Index = () => {
                     Start Your Journey
                     <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
                   </button>
-                  <button className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-600 hover:text-white transition-all duration-300">
+                  <button className="border-2 border-green-400 text-green-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-400 hover:text-white transition-all duration-300">
                     View Case Studies
                   </button>
                 </div>
 
-                <div className="flex flex-wrap justify-center lg:justify-start items-center gap-8 text-gray-500">
+                <div className="flex flex-wrap justify-center lg:justify-start items-center gap-8 text-gray-300">
                   <div className="flex items-center">
-                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    <CheckCircle className="w-5 h-5 text-green-400 mr-2" />
                     <span>Carbon Neutral Certified</span>
                   </div>
                   <div className="flex items-center">
-                    <Globe className="w-5 h-5 text-green-500 mr-2" />
+                    <Globe className="w-5 h-5 text-green-400 mr-2" />
                     <span>Global Impact</span>
                   </div>
                   <div className="flex items-center">
-                    <Lightbulb className="w-5 h-5 text-green-500 mr-2" />
+                    <Lightbulb className="w-5 h-5 text-green-400 mr-2" />
                     <span>Innovative Solutions</span>
                   </div>
                 </div>
